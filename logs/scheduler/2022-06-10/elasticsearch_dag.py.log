@@ -1,0 +1,14 @@
+[2022-06-10 09:20:57,499] {processor.py:153} INFO - Started process (PID=19817) to work on /home/smita/airflow/dags/elasticsearch_dag.py
+[2022-06-10 09:20:57,500] {processor.py:641} INFO - Processing file /home/smita/airflow/dags/elasticsearch_dag.py for tasks to queue
+[2022-06-10 09:20:57,502] {logging_mixin.py:115} INFO - [2022-06-10 09:20:57,502] {dagbag.py:507} INFO - Filling up the DagBag from /home/smita/airflow/dags/elasticsearch_dag.py
+[2022-06-10 09:20:59,026] {processor.py:651} INFO - DAG(s) dict_keys(['elasticsearch_dag']) retrieved from /home/smita/airflow/dags/elasticsearch_dag.py
+[2022-06-10 09:20:59,197] {logging_mixin.py:115} INFO - [2022-06-10 09:20:59,197] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-10 09:20:59,249] {logging_mixin.py:115} INFO - [2022-06-10 09:20:59,249] {dag.py:2923} INFO - Setting next_dagrun for elasticsearch_dag to 2022-06-10T00:00:00+00:00, run_after=2022-06-11T00:00:00+00:00
+[2022-06-10 09:20:59,273] {processor.py:161} INFO - Processing /home/smita/airflow/dags/elasticsearch_dag.py took 1.784 seconds
+[2022-06-10 09:21:30,237] {processor.py:153} INFO - Started process (PID=19972) to work on /home/smita/airflow/dags/elasticsearch_dag.py
+[2022-06-10 09:21:30,238] {processor.py:641} INFO - Processing file /home/smita/airflow/dags/elasticsearch_dag.py for tasks to queue
+[2022-06-10 09:21:30,239] {logging_mixin.py:115} INFO - [2022-06-10 09:21:30,239] {dagbag.py:507} INFO - Filling up the DagBag from /home/smita/airflow/dags/elasticsearch_dag.py
+[2022-06-10 09:21:30,844] {processor.py:651} INFO - DAG(s) dict_keys(['elasticsearch_dag']) retrieved from /home/smita/airflow/dags/elasticsearch_dag.py
+[2022-06-10 09:21:30,947] {logging_mixin.py:115} INFO - [2022-06-10 09:21:30,946] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-10 09:21:30,972] {logging_mixin.py:115} INFO - [2022-06-10 09:21:30,972] {dag.py:2923} INFO - Setting next_dagrun for elasticsearch_dag to 2022-06-10T00:00:00+00:00, run_after=2022-06-11T00:00:00+00:00
+[2022-06-10 09:21:30,986] {processor.py:161} INFO - Processing /home/smita/airflow/dags/elasticsearch_dag.py took 0.756 seconds

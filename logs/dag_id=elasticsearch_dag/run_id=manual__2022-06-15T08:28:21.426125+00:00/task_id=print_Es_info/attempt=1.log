@@ -1,0 +1,27 @@
+[2022-06-15 13:58:22,447] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.print_Es_info manual__2022-06-15T08:28:21.426125+00:00 [queued]>
+[2022-06-15 13:58:22,457] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.print_Es_info manual__2022-06-15T08:28:21.426125+00:00 [queued]>
+[2022-06-15 13:58:22,457] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-15 13:58:22,457] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-15 13:58:22,457] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-15 13:58:22,467] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): print_Es_info> on 2022-06-15 08:28:21.426125+00:00
+[2022-06-15 13:58:22,492] {standard_task_runner.py:52} INFO - Started process 5912 to run task
+[2022-06-15 13:58:22,497] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'elasticsearch_dag', 'print_Es_info', 'manual__2022-06-15T08:28:21.426125+00:00', '--job-id', '107', '--raw', '--subdir', 'DAGS_FOLDER/elasticsearch_dag.py', '--cfg-path', '/tmp/tmp9fe257pp', '--error-file', '/tmp/tmp5pf76h87']
+[2022-06-15 13:58:22,500] {standard_task_runner.py:80} INFO - Job 107: Subtask print_Es_info
+[2022-06-15 13:58:22,624] {task_command.py:370} INFO - Running <TaskInstance: elasticsearch_dag.print_Es_info manual__2022-06-15T08:28:21.426125+00:00 [running]> on host TIGER0990.tigeranalytics.local
+[2022-06-15 13:58:22,755] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=elasticsearch_dag
+AIRFLOW_CTX_TASK_ID=print_Es_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-15T08:28:21.426125+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-15T08:28:21.426125+00:00
+[2022-06-15 13:58:22,784] {base.py:68} INFO - Using connection ID 'elasticsearch_default' for task execution.
+[2022-06-15 13:58:22,810] {logging_mixin.py:115} WARNING - /home/smita/miniconda3/lib/python3.8/site-packages/elasticsearch/connection/base.py:193 ElasticsearchDeprecationWarning: Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+[2022-06-15 13:58:22,810] {base.py:255} INFO - GET http://localhost:9200/ [status:200 request:0.020s]
+[2022-06-15 13:58:22,810] {logging_mixin.py:115} INFO - {'name': 'TIGER0990', 'cluster_name': 'elasticsearch', 'cluster_uuid': 'A7nMTz8pQ1KWYEsDqvNR8g', 'version': {'number': '7.17.4', 'build_flavor': 'default', 'build_type': 'deb', 'build_hash': '79878662c54c886ae89206c685d9f1051a9d6411', 'build_date': '2022-05-18T18:04:20.964345128Z', 'build_snapshot': False, 'lucene_version': '8.11.1', 'minimum_wire_compatibility_version': '6.8.0', 'minimum_index_compatibility_version': '6.0.0-beta1'}, 'tagline': 'You Know, for Search'}
+[2022-06-15 13:58:22,810] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-15 13:58:22,837] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=elasticsearch_dag, task_id=print_Es_info, execution_date=20220615T082821, start_date=20220615T082822, end_date=20220615T082822
+[2022-06-15 13:58:22,875] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-15 13:58:22,952] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

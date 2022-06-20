@@ -1,0 +1,26 @@
+[2022-06-06 10:09:24,186] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: parallel_runs.processing_tasks scheduled__2022-06-05T00:00:00+00:00 [queued]>
+[2022-06-06 10:09:24,194] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: parallel_runs.processing_tasks scheduled__2022-06-05T00:00:00+00:00 [queued]>
+[2022-06-06 10:09:24,194] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-06 10:09:24,194] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-06 10:09:24,195] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-06 10:09:24,204] {taskinstance.py:1378} INFO - Executing <Task(SubDagOperator): processing_tasks> on 2022-06-05 00:00:00+00:00
+[2022-06-06 10:09:24,223] {standard_task_runner.py:52} INFO - Started process 8814 to run task
+[2022-06-06 10:09:24,228] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_runs', 'processing_tasks', 'scheduled__2022-06-05T00:00:00+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/parallel_runs.py', '--cfg-path', '/tmp/tmpyzsqrzlx', '--error-file', '/tmp/tmp8juiw_f8']
+[2022-06-06 10:09:24,231] {standard_task_runner.py:80} INFO - Job 18: Subtask processing_tasks
+[2022-06-06 10:09:24,423] {task_command.py:370} INFO - Running <TaskInstance: parallel_runs.processing_tasks scheduled__2022-06-05T00:00:00+00:00 [running]> on host TIGER0990.tigeranalytics.local
+[2022-06-06 10:09:24,585] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=parallel_runs
+AIRFLOW_CTX_TASK_ID=processing_tasks
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T00:00:00+00:00
+[2022-06-06 10:09:24,591] {logging_mixin.py:115} WARNING - /home/smita/miniconda3/lib/python3.8/site-packages/airflow/utils/context.py:202 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-06-06 10:09:24,705] {subdag.py:171} INFO - Created DagRun: scheduled__2022-06-05T00:00:00+00:00
+[2022-06-06 10:10:24,802] {base.py:301} INFO - Success criteria met. Exiting.
+[2022-06-06 10:10:24,840] {subdag.py:186} INFO - Execution finished. State is success
+[2022-06-06 10:10:24,894] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=parallel_runs, task_id=processing_tasks, execution_date=20220605T000000, start_date=20220606T043924, end_date=20220606T044024
+[2022-06-06 10:10:24,911] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-06 10:10:25,021] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

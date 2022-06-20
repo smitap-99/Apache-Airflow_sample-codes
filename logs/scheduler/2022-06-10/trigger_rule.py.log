@@ -1,0 +1,5 @@
+[2022-06-10 09:21:23,592] {processor.py:153} INFO - Started process (PID=19941) to work on /home/smita/airflow/dags/trigger_rule.py
+[2022-06-10 09:21:23,593] {processor.py:641} INFO - Processing file /home/smita/airflow/dags/trigger_rule.py for tasks to queue
+[2022-06-10 09:21:23,594] {logging_mixin.py:115} INFO - [2022-06-10 09:21:23,594] {dagbag.py:507} INFO - Filling up the DagBag from /home/smita/airflow/dags/trigger_rule.py
+[2022-06-10 09:21:23,610] {processor.py:653} WARNING - No viable dags retrieved from /home/smita/airflow/dags/trigger_rule.py
+[2022-06-10 09:21:23,739] {processor.py:161} INFO - Processing /home/smita/airflow/dags/trigger_rule.py took 0.154 seconds
